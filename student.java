@@ -1,35 +1,15 @@
-package project2;
+package project1;
 
 public class student {
+	​String name;
+
+		student(String name){
+		this.name=name;
+		System.out.println("The name of the Student is "+name);
+		}
+		
+		student(){
+		System.out.println("The name of the Student is unknown ");
+		}
+		}
 	
-	public static void main (String[] args)
-	{
-	int number=-1;
-	try
-	{
-	if(number<0)
-	{
-	throw new Negative("Negative Exception");
-	}
-	else {
-	System.out.println(number);
-	}
-	}
-	catch(Negative e)
-	{
-	System.out.println(e);
-	}
-	}
-
-
-
-	}
-	class Negative extends Exception
-	{
-	public Negative(String number)
-	{
-	super(number);
-	}
-	}
-
-
